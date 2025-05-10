@@ -25,22 +25,7 @@ LeleSmart adalah aplikasi web yang menggunakan sistem pakar untuk menganalisis k
   - Paginasi
   - Detail hasil analisis
 
-## Teknologi
-
-- **Frontend:**
-  - Next.js 14 (App Router)
-  - React Query
-  - Tailwind CSS
-  - Framer Motion
-  - Headless UI
-  - TanStack Table
-
-- **Backend:**
-  - Next.js API Routes
-  - Prisma ORM
-  - PostgreSQL
-
-## Persyaratan Sistem
+## Requirements
 
 - Node.js 18.0.0 atau lebih baru
 - PostgreSQL 12.0 atau lebih baru
@@ -93,25 +78,6 @@ Aplikasi akan berjalan di `http://localhost:3000`
    - Lihat daftar analisis yang telah dilakukan
    - Klik pada baris untuk melihat detail hasil
    - Gunakan fitur pengurutan dan paginasi untuk navigasi
-
-## Struktur Proyek
-
-```
-lelesmart/
-├── prisma/
-│   └── schema.prisma      # Skema database
-├── src/
-│   ├── app/
-│   │   ├── api/          # API routes
-│   │   ├── analyses/     # Halaman riwayat
-│   │   ├── page.tsx      # Halaman utama
-│   │   └── layout.tsx    # Layout aplikasi
-│   ├── components/       # Komponen React
-│   └── lib/
-│       └── expert-system/ # Logika sistem pakar
-├── public/              # Aset statis
-└── package.json
-```
 
 ## Logika Sistem Pakar
 
