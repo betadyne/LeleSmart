@@ -50,8 +50,7 @@ LeleSmart adalah aplikasi web yang menggunakan sistem pakar untuk menganalisis k
 
 1. Clone repository:
 ```bash
-git clone https://github.com/username/lelesmart.git
-cd lelesmart
+git clone https://github.com/betadyne/LeleSmart
 ```
 
 2. Install dependencies:
