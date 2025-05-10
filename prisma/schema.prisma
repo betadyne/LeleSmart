@@ -1,0 +1,46 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Analysis {
+  id            String   @id @default(cuid())
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+
+  // Seed condition inputs
+  headShape     Int
+  agility       Int
+  skinColor     Int
+  defect        Int
+  cfHead        Float
+  cfAgility     Float
+  cfSkin        Float
+  cfDefect      Float
+
+  // Pond condition inputs
+  ph            Int
+  temperature   Float
+
+  // Feed type
+  feedType      Int
+
+  // Results
+  seedCondition Json
+  pondCondition Json
+  finalResult   Json
+  cfSeed        Float
+  cfPond        Float
+  cfFinal       Float
+
+  @@index([createdAt])
+}
+
+// Add your models here 
