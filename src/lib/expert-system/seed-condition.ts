@@ -59,6 +59,6 @@ export function evaluateSeedCondition(input: SeedConditionInput) {
 
   return {
     condition: "Tidak Valid",
-    cf: 1.0
+    cf: 0.0
   };
 } 

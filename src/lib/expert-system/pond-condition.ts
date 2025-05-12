@@ -21,7 +21,7 @@ export function evaluatePondCondition(input: PondConditionInput) {
     }
     return {
       condition: "Buruk",
-      cf: 0.9
+      cf: 0.6
     };
   }
 
@@ -41,6 +41,6 @@ export function evaluatePondCondition(input: PondConditionInput) {
 
   return {
     condition: "Tidak Valid",
-    cf: 1.0
+    cf: 0.0
   };
 } 

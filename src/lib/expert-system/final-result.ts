@@ -83,6 +83,6 @@ export function determineFinalResult(
 
   return {
     recommendation: "Tidak Diketahui",
-    cf: 1.0
+    cf: 0.0
   };
 } 

@@ -40,9 +40,9 @@ export default function Home() {
     cfSkin: 1.0,
     cfDefect: 1.0,
     ph: 2,
-    temperature: 28 ,
+    temperature: 28,
     feedType: 1,
-  });  
+  });
 
   const seedConditionQuery = useQuery({
     queryKey: ['seedCondition', formData],
@@ -283,7 +283,7 @@ export default function Home() {
                     <option value="3">Rendah</option>
                   </select>
                 </div>
-                
+
                 <div>
                   <label htmlFor="temperature" className="block text-sm font-medium text-gray-700 mb-1">
                     Suhu Air (°C)
@@ -291,19 +291,12 @@ export default function Home() {
                   <input
                     id="temperature"
                     type="number"
-                    value={formData.temperature === 0 ? "" : formData.temperature || ""}
-                    onChange={(e) => {
-                      const value = e.target.value;
-                      setFormData({
-                        ...formData,
-                        temperature: value === "" ? 0 : Number(value),
-                      });
-                    }}
+                    value={formData.temperature}
+                    onChange={(e) => setFormData({ ...formData, temperature: Number(e.target.value) })}
                     className="w-full p-2 border rounded focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
                     min="0"
                     max="100"
                     step="0.1"
-                    placeholder="0"
                   />
                 </div>
 
